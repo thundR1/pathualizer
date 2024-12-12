@@ -16,6 +16,10 @@ h6 {
   background-color: rgb(12, 53, 71);
 }
 
+.btn-disabled {
+  background-color: #94a3b8;
+}
+
 .apply-wall-anim {
   animation-name: wall-anim;
   animation-duration: 0.3s;
@@ -97,5 +101,201 @@ h6 {
   100% {
     transform: scale(1);
     background-color: rgba(0, 190, 218, 0.75);
+  }
+}
+
+.responsive-strt-btn {
+}
+
+.responsive-dest-btn {
+}
+
+.responsive-gen-btn {
+}
+
+.responsive-vis-btn {
+}
+
+.responsive-slct-btn {
+}
+
+.responsive-clr-mze-btn {
+}
+
+.responsive-clr-grd-btn {
+}
+
+@media (max-width: 1024px) {
+  .responsive-vis-btn {
+    left: 400px;
+  }
+}
+
+@media (max-width: 912px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: small;
+    top: 25%;
+  }
+
+  .responsive-dest-btn {
+    left: 95px;
+  }
+
+  .responsive-gen-btn {
+    left: 217px;
+  }
+
+  .responsive-slct-btn {
+    right: 193px;
+  }
+
+  .responsive-clr-mze-btn {
+    right: 99px;
+  }
+}
+
+@media (max-width: 844px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: x-small;
+    top: 25%;
+  }
+
+  .responsive-dest-btn {
+    left: 80px;
+  }
+
+  .responsive-gen-btn {
+    left: 180px;
+  }
+
+  .responsive-slct-btn {
+    right: 163px;
+  }
+
+  .responsive-clr-mze-btn {
+    right: 85px;
+  }
+}
+
+@media (max-width: 780px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: x-small;
+    top: 25%;
+  }
+
+  .responsive-vis-btn {
+    left: 340px;
+  }
+}
+
+@media (max-width: 720px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: x-small;
+    top: 25%;
+  }
+
+  .responsive-vis-btn {
+    left: 300px;
+  }
+}
+
+@media (max-width: 680px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: x-small;
+    top: 25%;
+  }
+
+  .responsive-vis-btn {
+    left: 280px;
+  }
+}
+
+@media (max-width: 656px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: xx-small;
+    top: 19%;
+    max-width: min-content;
+  }
+
+  .responsive-dest-btn {
+    left: 58px;
+  }
+
+  .responsive-gen-btn {
+    left: 132px;
+  }
+
+  .responsive-vis-btn {
+    top: 30%;
+  }
+
+  .responsive-slct-btn {
+    right: 107px;
+    max-width: 92px;
+    top: 30%;
+  }
+
+  .responsive-clr-mze-btn {
+    right: 60px;
+  }
+}
+
+@media (max-width: 568px) {
+  .responsive-strt-btn,
+  .responsive-dest-btn,
+  .responsive-gen-btn,
+  .responsive-vis-btn,
+  .responsive-slct-btn,
+  .responsive-clr-mze-btn,
+  .responsive-clr-grd-btn {
+    font-size: xx-small;
+    top: 19%;
+    max-width: min-content;
+  }
+
+  .responsive-vis-btn {
+    top: 30%;
+    left: 205px;
+  }
+
+  .responsive-slct-btn {
+    top: 30%;
+    max-width: 92px;
   }
 }

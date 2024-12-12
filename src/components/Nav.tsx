@@ -83,13 +83,13 @@ const Nav = ({
   };
 
   return (
-    <header className="absolute bg-slate-300 w-full h-[67px]">
+    <header className="absolute bg-slate-300 w-full min-h-[9%] z-10">
       <div>
         <button
           onClick={handleClick}
           disabled={startBfs || isDrawingMaze}
-          className={`absolute right-3 top-3 bg-yellow-400 p-2 px-3 font-semibold rounded-lg ${
-            startBfs || isDrawingMaze ? "bg-disabled text-white" : ""
+          className={`absolute right-3 top-3 bg-yellow-400 p-2 px-3 font-semibold rounded-lg responsive-clr-grd-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled text-white" : ""
           }`}
         >
           Clear Grid
@@ -97,8 +97,8 @@ const Nav = ({
         <button
           onClick={handleClearMaze}
           disabled={startBfs || isDrawingMaze}
-          className={`absolute right-28 top-3 bg-purple-600 text-white p-2 px-3 font-semibold rounded-lg ${
-            startBfs || isDrawingMaze ? "bg-disabled" : ""
+          className={`absolute right-28 top-3 bg-purple-600 text-white p-2 px-3 font-semibold rounded-lg responsive-clr-mze-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled" : ""
           }`}
         >
           Clear Maze
@@ -106,8 +106,8 @@ const Nav = ({
         <select
           value={selectedValue}
           onChange={handleSelectChange}
-          className={`absolute top-3 bg-gray-700 text-white p-2 px-3 font-semibold rounded-lg right-56 ${
-            startBfs || isDrawingMaze ? "bg-disabled" : ""
+          className={`absolute top-3 bg-gray-700 text-white p-2 px-3 font-semibold rounded-lg right-56 responsive-slct-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled" : ""
           }`}
           disabled={startBfs || isDrawingMaze}
         >
@@ -123,8 +123,8 @@ const Nav = ({
         <button
           onClick={handleStartCell}
           disabled={startBfs || isDrawingMaze}
-          className={`absolute bg-green-500 top-3 p-2 px-3 font-semibold rounded-lg left-3 ${
-            startBfs || isDrawingMaze ? "bg-disabled text-white" : ""
+          className={`absolute bg-green-500 top-3 p-2 px-3 font-semibold rounded-lg left-3 responsive-strt-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled text-white" : ""
           }`}
         >
           Start Cell
@@ -132,8 +132,8 @@ const Nav = ({
         <button
           onClick={handleEndCell}
           disabled={startBfs || isDrawingMaze}
-          className={`absolute top-3 bg-red-600 text-white p-2 px-3 font-semibold rounded-lg left-28 ${
-            startBfs || isDrawingMaze ? "bg-disabled" : ""
+          className={`absolute top-3 bg-red-600 text-white p-2 px-3 font-semibold rounded-lg left-28 responsive-dest-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled" : ""
           }`}
         >
           Destination Cell
@@ -141,16 +141,16 @@ const Nav = ({
         <button
           onClick={handleMaze}
           disabled={startBfs || isDrawingMaze}
-          className={`absolute left-64 top-3 bg-purple-600 text-white p-2 px-3 font-semibold rounded-lg ${
-            startBfs || isDrawingMaze ? "bg-disabled" : ""
+          className={`absolute left-64 top-3 bg-purple-600 text-white p-2 px-3 font-semibold rounded-lg responsive-gen-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled" : ""
           }`}
         >
           Generate Maze
         </button>
         <button
           onClick={runSelectedAlgorithm}
-          className={`absolute top-3 bg-indigo-600 text-white p-2 px-6 font-semibold rounded-full left-[50%] ${
-            startBfs || isDrawingMaze ? "bg-disabled" : ""
+          className={`absolute top-3 bg-indigo-600 text-white p-2 px-6 font-semibold rounded-full left-[50%] responsive-vis-btn ${
+            startBfs || isDrawingMaze ? "btn-disabled" : ""
           }`}
           disabled={startBfs || isDrawingMaze}
         >

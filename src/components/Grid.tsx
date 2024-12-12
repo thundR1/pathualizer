@@ -235,7 +235,7 @@ const Grid = ({ rows, cols, gap = 0 }: GridProps) => {
               cellRefs.current[idx] = el;
             }}
             key={idx}
-            className={`outline outline-1 outline-[rgb(175,216,248)] ${
+            className={`outline outline-1 outline-[rgb(175,216,248)] min-w-[25px] ${
               isActive ? "bg-wall apply-wall-anim" : ""
             } ${strt ? "bg-green-500" : ""} ${end ? "bg-red-600" : ""}`}
             onMouseDown={(e) => {

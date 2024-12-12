@@ -5,7 +5,6 @@ export default {
     extend: {
       backgroundColor: {
         wall: "rgb(12, 53, 71)",
-        disabled: "#94a3b8",
       },
     },
   },

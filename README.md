@@ -1,6 +1,6 @@
 # Pathualizer
 
-Visualize various pathfinding algorithms, add walls, generate mazes and solve them
+Visualize various pathfinding algorithms, choose start and destination cells, add walls, generate mazes, and start visualizing!
 
 ## Currently available algorithms
 
